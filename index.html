@@ -1,60 +1,178 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M A R . Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+   <!-- Custom Favicon -->
+  <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+  <!-- fontawesome liabrary -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+  <!-- remember, jQuery is completely optional (particles links) -->
+  <script type='text/javascript' src='js/jquery.particleground.js'></script>
+  <script type='text/javascript' src='js/demo.js'></script>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   <!-- remember, jQuery is completely optional (particles links) -->
+  <script type='text/javascript' src='jquery.particleground.js'></script>
+  <script type='text/javascript' src='js/demo.js'></script>
 </head>
 <body>
 
-  <div class='container'>
-    <h2>Header</h2>
-    <div>Junior Web Developer</div>
-    <div>FontAwesome icons</div>
+   <div class="sidenav">
+    <a href="#about">About</a>
+    <a href="#services">Features</a>
+    <a href="#clients">Projects</a>
+    <a href="#contact">Blog</a>
+    <a href="#contact">Contact</a>
   </div>
 
+    <div id="header">
+      <section id="introduction">
+       <div id="particles">
+        <div id="intro">
+          <h1>I am Omar</h1>
+          <h4>Junior Web Developer</h4>
+          <p>Aiming at effecient <span class="span">code</span> and <span class="span">product</span></p>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-instagram" ></i>
+        </div>
+       </div>
+      </section>
+    </div>
+
+
 
   <div class='container'>
-    <h2>About</h2>
-    <div>image</div>
-    <div>Skills</div>
+    <div>
+      <img src="me.jpg" width="330px">
+    </div>
+
+    <div>
+      <div class="skills-container">
+        <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="css">Sass</li>
+            <li class="js">JavaScript</li>
+            <li class="ng">React.js</li>
+        </ul>
+    </div>
+    </div>
   </div>
 
   <div class='container'>
-    <h2>Feature</h2>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+          <div>
+            <div class="hex-content"  data-aos="fade-down" data-aos-duration="300">
+          <div class="hexagon">
+            <div class="hexagontent">
+             <i class="fas fa-gem"></i>
+              <li>Impressive</li>
+            </div>
+          </div>
+          <p>Good eye for design and web page components.</p>
+        </div>
+          </div>
+
+          <div>
+            <div class="hex-content" data-aos="fade-down" data-aos-duration="600">
+          <div class="hexagon">
+            <div class="hexagontent">
+              <i class="fas fa-mobile-alt"></i>
+              <li>Responsive</li>
+            </div>
+          </div>
+         <p>Layouts work on any device, big or small width.</p>
+        </div>
+
+          </div>
+
+          <div>
+            <div class="hex-content" data-aos="fade-down" data-aos-duration="900">
+          <div class="hexagon">
+            <div class="hexagontent">
+              <i class="fas fa-lightbulb"></i>
+              <li>Intuitive</li>
+          </div>
+        </div>
+        <p>Strong preference for easy to use, intuitive UX/UI.</p>
+        </div>
+          </div>
+
+          <div>
+             <div class="hex-content" data-aos="fade-down" data-aos-duration="1200">
+         <div class="hexagon">
+          <div class="hexagontent">
+            <i class="fas fa-rocket"></i>
+            <li>Dynamic</li>
+          </div>
+        </div>
+        <p>Websites should not be static but dynamic.</p>
+        </div>
+          </div>
   </div>
 
   <div class='container'>
-    <h2>Projects</h2>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
+        <div><img class = "project-img" src="craigslist.png"></div>
+        <div><img class = "project-img" src="donate.png"></div>
+        <div><img class = "project-img" src="nile.png"></div>
+        <div><img class = "project-img" src="portfolio.png"></div>
   </div>
 
   <div class='container'>
-    <h2>Blog</h2>
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <div>
+        <div>
+          <a href="blog/blog1.html"><img src="rsz_1obs.jpg"></a>
+          <h2 class="h2">Break your life obstacles!</h2><!-- Headline -->
+          <span>June 23, 2018</span>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <a href="blog/blog3.html"><img src="rsz_positive.jpg"></a>
+          <h2 class="h2">Bind yoursel with your society</h2><!-- Headline -->
+          <span>June 23, 2018</span>
+        </div>
+      </div>
+
   </div>
 
   <div class='container'>
-    <h2>Contact</h2>
-      <div>Icons</div>
-      <div>Email field</div>
+      <div>
+
+      </div>
+
+      <div>
+
+      </div>
   </div>
 
   <div class='container'>
-    <h2>Footer</h2>
     <div>Findme</div>
     <div>Quick links</div>
     <div>Interests</div>
   </div>
 </body>
+<script>
+  /* Particleground demo */
+document.addEventListener('DOMContentLoaded', function () {
+  particleground(document.getElementById('particles'), {
+    dotColor: '#8fafef',
+    lineColor: '#fff',
+    lineWidth: 0.6,
+    curvedLines: false,
+    parallaxMultiplier: 100
+  });
+  var intro = document.getElementById('intro');
+  intro.style.marginTop = - intro.offsetHeight / 1.4 + 'px';
+}, false);
+
+
+</script>
 </html>
