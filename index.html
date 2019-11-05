@@ -7,6 +7,9 @@
    <!-- Custom Favicon -->
   <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
 
+  <!-- css animate containers content -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
   <!-- fontawesome liabrary -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 
@@ -25,9 +28,9 @@
 
    <div class="sidenav">
     <a href="#about">About</a>
-    <a href="#services">Features</a>
-    <a href="#clients">Projects</a>
-    <a href="#contact">Blog</a>
+    <a href="#features">Features</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
   </div>
 
@@ -47,17 +50,19 @@
     </div>
 
 
-
-  <div class='container'>
+  <div>
+    <h3>About</h3>
+  <div class='container' id="about">
     <div>
       <img src="me.jpg" width="330px">
     </div>
 
     <div>
       <div class="skills-container">
+        <h3>Technical skills</h3>
         <ul>
-            <li class="html">HTML</li>
-            <li class="css">CSS</li>
+            <li class="html">Html</li>
+            <li class="css">Css</li>
             <li class="css">Sass</li>
             <li class="js">JavaScript</li>
             <li class="ng">React.js</li>
@@ -65,68 +70,202 @@
     </div>
     </div>
   </div>
+</div>
 
-  <div class='container'>
-          <div>
-            <div class="hex-content"  data-aos="fade-down" data-aos-duration="300">
+  <div><h3>Production features</h3>
+  <div class='container' id="features">
+
+    <div>
+      <a href="#impressive">
+        <div class="hex-content">
           <div class="hexagon">
             <div class="hexagontent">
              <i class="fas fa-gem"></i>
               <li>Impressive</li>
             </div>
           </div>
-          <p>Good eye for design and web page components.</p>
         </div>
-          </div>
+      </a>
 
-          <div>
-            <div class="hex-content" data-aos="fade-down" data-aos-duration="600">
+      <div id="impressive" class="modaloverlay">
+        <div class="modal" >
+          <a href="#close" class="close">&times;</a>
+          <div class="animated zoomInRight delay-.5s">
+            <h1>Impressive products:</h1>
+            <p>Good eye for design and web page components.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <a href="#responsive">
+        <div class="hex-content">
           <div class="hexagon">
             <div class="hexagontent">
               <i class="fas fa-mobile-alt"></i>
               <li>Responsive</li>
             </div>
           </div>
-         <p>Layouts work on any device, big or small width.</p>
         </div>
+      </a>
 
+      <div id="responsive" class="modaloverlay">
+        <div class="modal" >
+          <a href="#close" class="close">&times;</a>
+          <div class="animated zoomInLeft delay-.5s">
+            <h1>Responsive layouts:</h1>
+            <p>Layouts work on any device, big or small width.</p>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div>
-            <div class="hex-content" data-aos="fade-down" data-aos-duration="900">
+    <div>
+        <a href="#intuitive">
+         <div class="hexagon-co">
+          <div class="hexagon">
+           <div class="hexagontent">
+            <i class="fas fa-lightbulb"></i>
+            <li>Intuitive</li>
+           </div>
+          </div>
+         </div>
+        </a>
+
+      <div id="intuitive" class="modaloverlay">
+        <div class="modal" >
+          <a href="#close" class="close">&times;</a>
+          <div class="animated zoomInLeft delay-.5s">
+            <h1>Intuitive design.</h1>
+            <p>Strong preference for easy to use, intuitive UX/UI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <a href="#dynamic">
+        <div class="hex-content">
           <div class="hexagon">
             <div class="hexagontent">
-              <i class="fas fa-lightbulb"></i>
-              <li>Intuitive</li>
+             <i class="fas fa-rocket"></i>
+             <li>Dynamic</li>
+            </div>
+          </div>
+         </div>
+      </a>
+
+      <div id="dynamic" class="modaloverlay">
+        <div class="modal" >
+          <a href="#close" class="close">&times;</a>
+          <div class="animated zoomInLeft delay-.5s">
+            <h1>Dynamic objects:</h1>
+            <p>Websites should not be static but dynamic.</p>
           </div>
         </div>
-        <p>Strong preference for easy to use, intuitive UX/UI.</p>
-        </div>
+      </div>
+   </div>
+ </div>
+
+  <div><h3>Projects</h3>
+  <div class='container' id='projects'>
+
+          <div class="projects">
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <div class="project-after">
+                <div class="overlay-container">
+                  <img class="project-imgs" src="craigslist.png">
+                <div class="overlay">
+                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
+                  <a href="projects/winkel.html">
+                    <button class="project-readmore">More</button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div>
-             <div class="hex-content" data-aos="fade-down" data-aos-duration="1200">
-         <div class="hexagon">
-          <div class="hexagontent">
-            <i class="fas fa-rocket"></i>
-            <li>Dynamic</li>
+          <div class="projects">
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <div class="project-after">
+                <div class="overlay-container">
+                  <img class="project-imgs" src="donate.png">
+                <div class="overlay">
+                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
+                  <a href="projects/winkel.html">
+                    <button class="project-readmore">More</button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <p>Websites should not be static but dynamic.</p>
-        </div>
+
+
+          <div class="projects">
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <div class="project-after">
+                <div class="overlay-container">
+                  <img class="project-imgs" src="portfolio.png">
+                <div class="overlay">
+                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
+                  <a href="projects/winkel.html">
+                    <button class="project-readmore">More</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="projects">
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <div class="project-after">
+                <div class="overlay-container">
+                  <img class="project-imgs" src="nile.png">
+                <div class="overlay">
+                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
+                  <a href="projects/winkel.html">
+                    <button class="project-readmore">More</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="projects">
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <div class="project-after">
+                <div class="overlay-container">
+                  <img class="project-imgs" src="nile.png">
+                <div class="overlay">
+                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
+                  <a href="projects/winkel.html">
+                    <button class="project-readmore">More</button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
   </div>
+</div>
 
-  <div class='container'>
-        <div><img class = "project-img" src="craigslist.png"></div>
-        <div><img class = "project-img" src="donate.png"></div>
-        <div><img class = "project-img" src="nile.png"></div>
-        <div><img class = "project-img" src="portfolio.png"></div>
-  </div>
+  <div><h3>My blog</h3>
+  <div class='container' id="blog">
 
-  <div class='container'>
       <div>
-        <div>
+        <div class="blog">
           <a href="blog/blog1.html"><img src="rsz_1obs.jpg"></a>
           <h2 class="h2">Break your life obstacles!</h2><!-- Headline -->
           <span>June 23, 2018</span>
@@ -134,37 +273,90 @@
       </div>
 
       <div>
-        <div>
+        <div class="blog">
           <a href="blog/blog3.html"><img src="rsz_positive.jpg"></a>
-          <h2 class="h2">Bind yoursel with your society</h2><!-- Headline -->
+          <h2 class="h2">How much positive can you be?</h2><!-- Headline -->
           <span>June 23, 2018</span>
         </div>
       </div>
 
   </div>
+</div>
 
-  <div class='container'>
-      <div>
+  <div>
+  <div class='container' id="contact">
 
+    <div>
+      <h3>Find more projects</h3>
+      <i class="fab fa-codepen"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+
+    <div>
+    <div class="footer">
+      <form action="php/send_mail.php" method="post">
+      <div data-aos="fade-down" data-aos-duration="700">
+        <input name="mail_from" type="text" placeholder="Enter Your email" required/>
+        <span class="border"></span>
       </div>
 
-      <div>
-
+      <div data-aos="fade-down" data-aos-duration="700">
+        <input name="mail_sub" type="text" placeholder="Subject" required/>
+         <span class="border"></span>
       </div>
+
+      <textarea data-aos="fade-down" data-aos-duration="700" name="mail_msg" type="text" placeholder="Message" required></textarea>
+
+      <div data-aos="fade-down" data-aos-duration="1200" >
+        <input name="submit" type="submit" value="SUBMIT"/>
+        <span class="border"></span>
+      </div>
+    </form>
+    </div>
   </div>
 
-  <div class='container'>
-    <div>Findme</div>
-    <div>Quick links</div>
-    <div>Interests</div>
-  </div>
+  <footer class="container">
+    <div>
+       <div class="footer-container">
+        <p>Find Me</p>
+            <span>324 Sutter st, SF CA 94115</span>
+            <span>omarproductoins2018@gmail.com</span>
+            <a href="https://www.linkedin.com/in/omar-alareeki-9a082ab7/">LinkedIn</a>
+            <a href="http://www.omarproductions.com/myresume.html">Resume</a>
+      </div>
+    </div>
+
+    <div>
+       <div class="footer-container">
+          <p>Quick Links</p>
+            <a href="https://codepen.io/OMAR_AL/#">More Projects, Codepen</a>
+            <a href="https://github.com/OmarAlareeki">More Projects, Github</a>
+            <a href="https://www.linkedin.com/in/omar-alareeki-9a082ab7/">Profession Experience</a>
+            <a href="">Sources</a>
+            <a href="">DONATE</a>
+      </div>
+    </div>
+
+    <div>
+         <div class="footer-container">
+        <p>Interests</p>
+          <a href="">JavaScript</a>
+          <a href="https://codepen.io/OMAR_AL/#">ReactJS</a>
+          <a href="">Activities</a>
+          <a href="">Personal</a>
+          <a href="">Future thoughts</a>
+    </div>
+    </div>
+  </footer>
 </body>
+
 <script>
   /* Particleground demo */
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
-    dotColor: '#8fafef',
-    lineColor: '#fff',
+    dotColor: '#8df',
+    lineColor: '#111',
     lineWidth: 0.6,
     curvedLines: false,
     parallaxMultiplier: 100
