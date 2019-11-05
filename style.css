@@ -1,3 +1,10 @@
+#header{
+  width: 93%;
+  float: right;
+  top: -29px;
+  position: relative;
+  right: -8px;
+}
 .container {
   display: flex;
   flex-wrap:wrap;
@@ -6,6 +13,14 @@
   overflow-wrap: break-word;
   margin-top:80px;
 }
+/*.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 92%;
+    overflow-wrap: break-word;
+    margin-top: 80px;
+    float: right;
+}*/
 
 .container > div{
   justify-content:center;
@@ -66,7 +81,6 @@ i{
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -96,7 +110,6 @@ i{
 .skills-container {
     width: 80%;
     margin: 0px auto 0;
-    padding: 10px;
 }
 
 li {
@@ -226,6 +239,7 @@ h3{
   text-align: center;
   font-size: 30px;
   text-decoration: underline;
+  padding:8px;
 }
 
 /*model*/
@@ -302,10 +316,9 @@ h3{
   padding: 10px;
   background: #f1f1f1
 }
-#projects{
-  justify-content: center
-}
-
+.projects:hover{
+    transform:translateY(-5px);
+  }
 .projects:hover{
   transition-delay: .7;
   transition: .7;
@@ -420,7 +433,8 @@ h3{
   top: -5px;
   right: 5px;
   color:
-  #ddd;
+  #111;
+  margin-right: 3px;
 }
 /**/
 
@@ -455,6 +469,7 @@ form{
     margin-bottom: 5px;
     border: none;
     margin: 15px;
+    border-radius: 20px/50px;
   }
   form input + .border{
     position: absolute;
@@ -476,10 +491,11 @@ form{
   resize:vertical;
   width: 100%;
   border: none;
+  border-radius: 16px/10px;
 }
 [type= "text"]{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   padding: 10px;
   background: #fff;
   border: 2px solid #111;
@@ -575,6 +591,9 @@ footer{
   #header{
     width:100%;
   }
+  .projects{
+    max-width:75%;
+  }
 
 }
 @media (min-width:600px) and (max-width:801px){
@@ -618,3 +637,4 @@ footer{
     width:45%;
   }
 }
+
