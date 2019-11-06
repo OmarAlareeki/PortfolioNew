@@ -9,22 +9,12 @@
   display: flex;
   flex-wrap:wrap;
   width:95%;
-  justify-content:flex-end;
+  justify-content:center;
   overflow-wrap: break-word;
   margin-top:80px;
 }
-/*.container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 92%;
-    overflow-wrap: break-word;
-    margin-top: 80px;
-    float: right;
-}*/
-
 .container > div{
   justify-content:center;
-/*  background-color: #f1f1f1;*/
   width: 40%;
   text-align: center;
   flex-wrap: wrap;
@@ -106,6 +96,16 @@ i{
 }
 /* end of the nav bar*/
 
+#about > div > img {
+  width: 55%;
+  padding: 20px;
+  position: relative;
+  bottom: -50px;
+  border-radius: 200px;
+  border: 1px solid
+  #111;
+}
+
 /*skills*/
 .skills-container {
     width: 80%;
@@ -181,6 +181,24 @@ li.ng:after {
 @keyframes ng {
     to {
         width: 60%;
+    }
+}
+li.ui:after {
+    animation-name: ui;
+}
+
+@keyframes ui {
+    to {
+        width: 60%;
+    }
+}
+li.res:after {
+    animation-name: res;
+}
+
+@keyframes res {
+    to {
+        width: 85%;
     }
 }
 
@@ -265,7 +283,7 @@ h3{
   z-index: 99999;
 }
 .modaloverlay .modal {
-  background-color: white;
+  background-color: #fff;
   height: 100%;
   position: relative;
   margin: 0 auto;
@@ -273,16 +291,18 @@ h3{
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
+
 /*@media (min-width: 60em) {
-  .modaloverlay .modal {
-    height: 75%;
+   .modaloverlay .modal {
+    height: 95%;
     margin: 5% auto;
-    max-height: 57em;
+    max-height: 67em;
     max-width: 66em;
-    width: 85%;
+    width: 80%;
   }
-}
-*/.modaloverlay .modal > iframe,
+}*/
+
+.modaloverlay .modal > iframe,
 .modaloverlay .modal > div {
   border: none;
   width: 100%;
@@ -308,7 +328,7 @@ h3{
   border:2px solid #f1f1f1;
 }
 .projects{
-  max-width: 24%;
+  max-width: 50%;
   display: inline-block;
   margin: 5px 16px;
   background: #8fafef;
@@ -491,8 +511,9 @@ form{
   resize:vertical;
   width: 100%;
   border: none;
-  border-radius: 16px/10px;
+  border-radius: 12px/25px;
 }
+
 [type= "text"]{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -577,6 +598,10 @@ footer{
   .projects{
     max-width:85%;
   }
+  #about > div > img {
+  position: relative;
+  bottom: 10px;
+}
 }
 @media (min-width:480px) and (max-width:600px){
   .container{
@@ -594,6 +619,10 @@ footer{
   .projects{
     max-width:75%;
   }
+  #about > div > img {
+  position: relative;
+  bottom: 10px;
+}
 
 }
 @media (min-width:600px) and (max-width:801px){

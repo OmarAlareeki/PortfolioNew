@@ -52,25 +52,27 @@
 
   <div>
     <h3>About</h3>
-  <div class='container' id="about">
-    <div>
-      <img src="me.jpg" width="330px">
-    </div>
+    <div class='container' id="about">
+      <div>
+        <img src="https://avatars2.githubusercontent.com/u/35746104?s=460&v=4">
+      </div>
 
-    <div>
-      <div class="skills-container">
-        <h3>Technical skills</h3>
-        <ul>
-            <li class="html">Html</li>
-            <li class="css">Css</li>
-            <li class="css">Sass</li>
-            <li class="js">JavaScript</li>
-            <li class="ng">React.js</li>
-        </ul>
-    </div>
+      <div>
+        <div class="skills-container">
+          <h3>Technical skills</h3>
+            <ul>
+              <li class="html">Html</li>
+              <li class="css">Css</li>
+              <li class="css">Sass</li>
+              <li class="js">JavaScript</li>
+              <li class="ng">React.js</li>
+              <li class="ui">UI & UX design</li>
+              <li class="res">Responsive design</li>
+            </ul>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
   <div><h3>Production features</h3>
   <div class='container' id="features">
@@ -90,7 +92,7 @@
       <div id="impressive" class="modaloverlay">
         <div class="modal" >
           <a href="#close" class="close">&times;</a>
-          <div class="animated zoomInRight delay-.5s">
+          <div>
             <h1>Impressive products:</h1>
             <p>Good eye for design and web page components.</p>
           </div>
@@ -113,7 +115,7 @@
       <div id="responsive" class="modaloverlay">
         <div class="modal" >
           <a href="#close" class="close">&times;</a>
-          <div class="animated zoomInLeft delay-.5s">
+          <div>
             <h1>Responsive layouts:</h1>
             <p>Layouts work on any device, big or small width.</p>
           </div>
@@ -136,7 +138,7 @@
       <div id="intuitive" class="modaloverlay">
         <div class="modal" >
           <a href="#close" class="close">&times;</a>
-          <div class="animated zoomInLeft delay-.5s">
+          <div>
             <h1>Intuitive design.</h1>
             <p>Strong preference for easy to use, intuitive UX/UI.</p>
           </div>
@@ -159,7 +161,7 @@
       <div id="dynamic" class="modaloverlay">
         <div class="modal" >
           <a href="#close" class="close">&times;</a>
-          <div class="animated zoomInLeft delay-.5s">
+          <div>
             <h1>Dynamic objects:</h1>
             <p>Websites should not be static but dynamic.</p>
           </div>
@@ -171,41 +173,65 @@
   <div><h3>Projects</h3>
   <div class='container' id='projects'>
 
+          <div>
           <div class="projects">
             <i class="far fa-dot-circle dot"></i>
             <i class="far fa-dot-circle dot"></i>
             <i class="far fa-dot-circle dot"></i>
             <div class="project-after">
-                <div class="overlay-container">
+              <div class="overlay-container">
                   <img class="project-imgs" src="craigslist.png">
                 <div class="overlay">
-                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
-                  <a href="projects/winkel.html">
-                    <button class="project-readmore">More</button>
-                  </a>
+                  <div class="text">Craigslist Front Page<p class="projects-tools">JavaScript, Css</p></div>
+                    <a href="#craigslist">
+                      <button class="project-readmore">More</button>
+                    </a>
                 </div>
               </div>
             </div>
           </div>
 
+            <div id="craigslist" class="modaloverlay">
+            <div class="modal" >
+              <a href="#close" class="close">&times;</a>
+              <div>
+                <h1>Impressive products:</h1>
+                <p>Good eye for design and web page components.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div>
           <div class="projects">
             <i class="far fa-dot-circle dot"></i>
             <i class="far fa-dot-circle dot"></i>
             <i class="far fa-dot-circle dot"></i>
             <div class="project-after">
-                <div class="overlay-container">
-                  <img class="project-imgs" src="donate.png">
-                <div class="overlay">
-                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
-                  <a href="projects/winkel.html">
-                    <button class="project-readmore">More</button>
-                  </a>
-                </div>
+             <div class="overlay-container">
+                <img class="project-imgs" src="donate.png">
+              <div class="overlay">
+                <div class="text">API request doantion page<p class="projects-tools">JavaScript, JSON, PHP</p></div>
+                <a href="#donate">
+                  <button class="project-readmore">More</button>
+                </a>
+              </div>
+             </div>
+           </div>
+         </div>
+
+            <div id="donate" class="modaloverlay">
+            <div class="modal" >
+              <a href="#close" class="close">&times;</a>
+              <div>
+                <h1>Impressive products:</h1>
+                <p>Good eye for design and web page components.</p>
               </div>
             </div>
           </div>
+        </div>
 
-
+          <div>
           <div class="projects">
             <i class="far fa-dot-circle dot"></i>
             <i class="far fa-dot-circle dot"></i>
@@ -214,8 +240,8 @@
                 <div class="overlay-container">
                   <img class="project-imgs" src="portfolio.png">
                 <div class="overlay">
-                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
-                  <a href="projects/winkel.html">
+                  <div class="text">Portfolio<p class="projects-tools">JS, CSS, Html</p></div>
+                  <a href="#portfolio">
                     <button class="project-readmore">More</button>
                   </a>
                 </div>
@@ -224,6 +250,48 @@
           </div>
 
 
+            <div id="portfolio" class="modaloverlay">
+            <div class="modal" >
+              <a href="#close" class="close">&times;</a>
+              <div>
+                <h1>Impressive products:</h1>
+                <p>Good eye for design and web page components.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div>
+          <div class="projects">
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <i class="far fa-dot-circle dot"></i>
+            <div class="project-after">
+                <div class="overlay-container">
+                  <img class="project-imgs" src="rsz_1weather.png">
+                <div class="overlay">
+                  <div class="text">Weather app<br> <p class="projects-tools">JavaScript</p></div>
+                  <a href="#weather">
+                    <button class="project-readmore">More</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+            <div id="weather" class="modaloverlay">
+            <div class="modal" >
+              <a href="#close" class="close">&times;</a>
+              <div>
+                <h1>Impressive products:</h1>
+                <p>Good eye for design and web page components.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div>
           <div class="projects">
             <i class="far fa-dot-circle dot"></i>
             <i class="far fa-dot-circle dot"></i>
@@ -232,8 +300,8 @@
                 <div class="overlay-container">
                   <img class="project-imgs" src="nile.png">
                 <div class="overlay">
-                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
-                  <a href="projects/winkel.html">
+                  <div class="text">Nile<p class="projects-tools">Html, Css</p></div>
+                  <a href="#nile">
                     <button class="project-readmore">More</button>
                   </a>
                 </div>
@@ -241,25 +309,19 @@
             </div>
           </div>
 
-
-          <div class="projects">
-            <i class="far fa-dot-circle dot"></i>
-            <i class="far fa-dot-circle dot"></i>
-            <i class="far fa-dot-circle dot"></i>
-            <div class="project-after">
-                <div class="overlay-container">
-                  <img class="project-imgs" src="nile.png">
-                <div class="overlay">
-                  <div class="text">Craigslist Front Page<br> <p class="projects-tools">Pure JavaScript</p></div>
-                  <a href="projects/winkel.html">
-                    <button class="project-readmore">More</button>
-                  </a>
-                </div>
+          <div id="nile" class="modaloverlay">
+            <div class="modal" >
+              <a href="#close" class="close">&times;</a>
+              <div>
+                <h1>Impressive products:</h1>
+                <p>Good eye for design and web page components.</p>
               </div>
             </div>
           </div>
-  </div>
-</div>
+        </div>
+
+        </div>
+      </div>
 
   <div><h3>My blog</h3>
   <div class='container' id="blog">
@@ -336,17 +398,6 @@
             <a href="">Sources</a>
             <a href="">DONATE</a>
       </div>
-    </div>
-
-    <div>
-         <div class="footer-container">
-        <p>Interests</p>
-          <a href="">JavaScript</a>
-          <a href="https://codepen.io/OMAR_AL/#">ReactJS</a>
-          <a href="">Activities</a>
-          <a href="">Personal</a>
-          <a href="">Future thoughts</a>
-    </div>
     </div>
   </footer>
 </body>
