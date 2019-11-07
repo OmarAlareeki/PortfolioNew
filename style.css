@@ -260,7 +260,7 @@ h3{
   padding:8px;
 }
 
-/*model*/
+/*model box*/
 .modaloverlay {
   background: rgba(0, 0, 0, 0.8);
   bottom: 0;
@@ -269,7 +269,7 @@ h3{
   pointer-events: none;
   position: fixed;
   right: 0;
-  top: 0;
+  top: 0px;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
@@ -286,21 +286,20 @@ h3{
   background-color: #fff;
   height: 100%;
   position: relative;
-  margin: 0 auto;
-  padding: 3em;
+  margin: 10px auto;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
-/*@media (min-width: 60em) {
+@media (min-width: 60em) {
    .modaloverlay .modal {
-    height: 95%;
-    margin: 5% auto;
+    height: 90%;
+    margin: auto;
     max-height: 67em;
     max-width: 66em;
-    width: 80%;
+    width: 90%;
   }
-}*/
+}
 
 .modaloverlay .modal > iframe,
 .modaloverlay .modal > div {
