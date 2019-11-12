@@ -1,25 +1,60 @@
-// Get the modal
-var modal = document.getElementById("myModal");
+$(document).ready(function(){
+  function moveMarker() {
+    var activeNav = $('.active');
+    var activewidth = $(activeNav).width();
+    var activePadLeft = parseFloat($(activeNav).css('padding-left'));
+    var activePadRight = parseFloat($(activeNav).css('padding-right'));
+    var totalWidth = activewidth + activePadLeft + activePadRight;
 
-// Get the button that opens the modal
-var btn = document.getElementsById("more");
+    var precedingAnchorWidth = anchorWidthCounter();
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    // TODO:
+    // Find the total widths of all of the anchors
+    // to the left of the active anchor.
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+    var activeMarker = $('.active-marker');
+    $(activeMarker).css('display','block');
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+    $(activeMarker).css('width', totalWidth);
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalA) {
-    modalA.style.display = "none";
+    $(activeMarker).css('left', precedingAnchorWidth);
+
+    // TODO:
+    // Using the calculated total widths of preceding anchors,
+    // Set the left: css value to that number.
   }
-}
+  moveMarker();
+
+  function anchorWidthCounter() {
+    var anchorWidths = 0;
+    var a;
+    var aWidth;
+    var aPadLeft;
+    var aPadRight;
+    var aTotalWidth;
+    $('.sidenav a').each(function(index, elem) {
+      var activeTest = $(elem).hasClass('active');
+      if(activeTest) {
+        // Break out of the each function.
+        return false;
+      }
+
+      a = $(elem).find('a');
+      aWidth = a.width();
+      aPadLeft = parseFloat(a.css('padding-left'));
+      aPadRight = parseFloat(a.css('padding-right'));
+      aTotalWidth = aWidth + aPadLeft + aPadRight;
+
+      anchorWidths = anchorWidths + aTotalWidth;
+    });
+
+    return anchorWidths;
+  }
+
+  $('.sidenava').click(function(e) {
+    e.preventDefault();
+    $('.sidenav a').removeClass('active');
+    $(this).parents('a').addClass('active');
+    moveMarker();
+  });
+});

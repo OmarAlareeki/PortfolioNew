@@ -23,11 +23,12 @@
    <!-- remember, jQuery is completely optional (particles links) -->
   <script type='text/javascript' src='jquery.particleground.js'></script>
   <script type='text/javascript' src='js/demo.js'></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 
    <div class="sidenav">
-    <a href="#about">About</a>
+    <a href="#about" class="active">About</a>
     <a href="#features">Features</a>
     <a href="#projects">Projects</a>
     <a href="#blog">Blog</a>
@@ -41,9 +42,10 @@
           <h1>I am Omar</h1>
           <h4>Junior Web Developer</h4>
           <p>Aiming at effecient <span class="span">code</span> and <span class="span">product</span></p>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-instagram" ></i>
+          <a href="https://www.linkedin.com/in/omar-alareeki-9a082ab7/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/OmarAlareeki"><i class="fab fa-github"></i></a>
+          <a href="https://www.freecodecamp.org/fcccd053784-99f3-4375-a6ba-75901ab8fb83"><i class="fab fa-free-code-camp"></i></a>
+
         </div>
        </div>
       </section>
@@ -261,7 +263,7 @@
                 <div class="overlay-container">
                   <img class="project-imgs" src="images/portfolio.png">
                 <div class="overlay">
-                  <div class="text">Portfolio<p class="projects-tools">JS, CSS, Html</p></div>
+                  <div class="text"> Three Portfolios<p class="projects-tools">JS, CSS, Html</p></div>
                   <a href="#portfolio">
                     <button class="project-readmore">More</button>
                   </a>
@@ -275,12 +277,14 @@
             <div class="modal" >
               <a href="#close" class="close">&times;</a>
               <div>
-                <h1>Portfolio 2018</h1>
+                <h1>Portfolios 2017, 2018</h1>
                 <h3>Goals of project:</h3>
                 <p>Updating the design of my old portfolio.</p>
                 <p>Adding resposiveness to the whole website.</p>
                 <p>Good eye for design and web page components.</p>
-                <button><a href="http://www.omarproductions.com/findomar/">See a live project</a></button>
+                <a href="http://www.omarproductions.com/projects/portfolio/index/">See a live portfolio 2017</a>
+                <a href="http://www.omarproductions.com/index/">See a live portfolio 2017</a>
+                <a href="http://www.omarproductions.com/findomar/">See a live portfolio 2018</a>
               </div>
             </div>
           </div>
@@ -314,7 +318,7 @@
                 <p>Requseting the location of user as first.</p>
                 <p>Using API call for your location's updates of weather.</p>
                 <p>Bringing the final temperature to user based on longitude & latitude.</p>
-                <button><a href="">See a live project</a></button>
+                <a href="">See a live project</a>
               </div>
             </div>
           </div>
@@ -347,6 +351,7 @@
                 <p>Attracting more clients of the business.</p>
                 <p>Having more details about the business.</p>
                 <p>Adding responsive web components to all objects in the site.</p>
+                <a href='http://www.nilehookahlounge.com/'>See a live old project</a>
                 <a href='https://www.omarproductions.com/projects/nk/'>See a live project</a>
               </div>
             </div>
@@ -361,7 +366,7 @@
 
       <div>
         <div class="blog">
-          <a href="http://www.omarproductions.com/findomar/blog/blog1.html"><img src="images/rsz_1obs.jpg"></a>
+          <a href="blog/blog1.html"><img src="images/rsz_1obs.jpg"></a>
           <h2 class="h2">Break your life obstacles!</h2><!-- Headline -->
           <span>June 23, 2018</span>
         </div>
@@ -369,9 +374,9 @@
 
       <div>
         <div class="blog">
-          <a href="http://www.omarproductions.com/findomar/blog/blog3.html"><img src="images/community.png"></a>
+          <a href="blog/blog2.html"><img src="images/community.png"></a>
           <h2 class="h2">Be involved with your community</h2><!-- Headline -->
-          <span>June 23, 2018</span>
+          <span>Dec 3, 2018</span>
         </div>
       </div>
 
@@ -383,10 +388,10 @@
 
     <div>
       <h3>Find more projects</h3>
-      <i class="fab fa-codepen"></i>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-free-code-camp"></i>
-      <i class="fab fa-twitter"></i>
+      <a href="https://codepen.io/OMAR_AL/#"><i class="fab fa-codepen"></i></a>
+      <a href="https://github.com/OmarAlareeki"><i class="fab fa-github"></i></a>
+      <a href="https://www.freecodecamp.org/fcccd053784-99f3-4375-a6ba-75901ab8fb83"><i class="fab fa-free-code-camp"></i></a>
+      <a href="https://twitter.com/OmarAl02409640"><i class="fab fa-twitter"></i></a>
     </div>
 
     <div>
@@ -404,7 +409,7 @@
       <textarea name="mail_msg" type="text" placeholder="Message" required></textarea>
 
       <div>
-        <input name="submit" type="submit" value="SUBMIT"/>
+        <input name="submit" type="submit" value="SUBMIT"/></input>
         <span class="border"></span>
       </div>
     </form>
@@ -448,7 +453,16 @@ document.addEventListener('DOMContentLoaded', function () {
   var intro = document.getElementById('intro');
   intro.style.marginTop = - intro.offsetHeight / 1.4 + 'px';
 }, false);
+</script>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 </script>
 </html>

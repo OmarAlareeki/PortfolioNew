@@ -84,6 +84,10 @@ i{
 }
 .sidenav a:hover {
   color: #8fafef;
+  border-left: 2px solid #fff;
+}
+.active{
+  color:rgba(55, 186, 177, 1);
 }
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
@@ -102,8 +106,6 @@ i{
   position: relative;
   bottom: -50px;
   border-radius: 200px;
-  border: 1px solid
-  #111;
 }
 
 /*skills*/
@@ -137,7 +139,7 @@ li:after {
     left: 0;
     width: 0;
     height: 5px;
-    background-color:#111;
+    background-color: #551a8b;
     border-radius: 1000px;
     animation-duration: .7s;
     animation-timing-function: ease;
@@ -250,7 +252,7 @@ li.res:after {
   font-size: 18px;
   line-height: 0;
   z-index: 1;
-  color:#111;
+  color:#551a8b;
 }
 /**/
 h3{
@@ -258,6 +260,7 @@ h3{
   font-size: 30px;
   text-decoration: underline;
   padding:8px;
+  color:#8fafef;
 }
 
 /*model box*/
@@ -299,6 +302,7 @@ h3{
     max-width: 66em;
     width: 90%;
     overflow-y: hidden;
+    border-radius: 0px 0px 10px 10px;
   }
 }
 
@@ -317,8 +321,9 @@ h3{
   right: 0;
   text-align: center;
   text-decoration: none;
-  top: 0;
+  top: 65px;
   z-index: 1;
+  border-radius: 10px 0px 0px 10px;
 }
 .modal div > p{
   background:#f1f1f1;
@@ -347,6 +352,11 @@ h3{
   border-radius: 10px;
   padding: 10px;
   background: #f1f1f1
+}
+.modaloverlay div > a{
+  display: block;
+  padding: 3px;
+  font-size: 18px;
 }
 .projects:hover{
     transform:translateY(-5px);
@@ -433,7 +443,7 @@ h3{
   text-align: center;
   padding: 6px;
   cursor: pointer;
-  background: #111;
+  background: #551a8b;
   color: #fff;
   border-radius: 20px/50px;
   width: 50%;
@@ -475,6 +485,10 @@ h3{
   width:40%;
   border-radius: 115px;
   border: 3px solid #f1f1f1;
+  padding: 5px;
+}
+#blog > div:hover{
+  transform:translateY(-3px);
 }
 /**/
 
@@ -507,14 +521,14 @@ form{
     position: absolute;
     bottom: 0;
     left: 50%;
-    background-color: #466775;
+    background-color: #111;
     width: 0;
-    height: 3px;
+    height: 2px;
     transition: .2s;
     margin-bottom: 5px;
   }
   form input:focus + .border{
-    left: 0;
+    left: 12px;
     width: 100%;
   }
   textarea {
@@ -538,7 +552,7 @@ form{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 30%;
   color: #fff;
-  background-color: #111;
+  background-color: #551a8b;
   font-size: 14px;
 }
 [type="submit"]:hover {
@@ -556,7 +570,7 @@ form{
   display: inline-block;
 }
 .footer-container > a{
-  color: #111;
+  color: #551a8b;
   display: block;
   border-bottom: 1px solid #fff1;
 }
@@ -601,8 +615,7 @@ footer{
   .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 18px;
-  color: #818181;
+  font-size: 16px;
   }
   #header{
     width:100%;
