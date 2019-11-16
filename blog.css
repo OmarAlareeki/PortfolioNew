@@ -126,7 +126,7 @@
       }
       .fab{
       font-size: 25px;
-      color: #55acee;
+      color: #551a8b;
       }
       #m{
       font-size: 35px;
@@ -142,6 +142,7 @@
       font-size: 24px;
       text-decoration: underline;
       color: #55acee;
+      padding: 20px 0px 20px 20px;
 
       }
       .codeImage{
