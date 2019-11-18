@@ -1,3 +1,18 @@
+ /* Particleground demo */
+document.addEventListener('DOMContentLoaded', function () {
+  particleground(document.getElementById('particles'), {
+    dotColor: '#8df',
+    lineColor: '#111',
+    lineWidth: 0.6,
+    curvedLines: false,
+    parallaxMultiplier: 100
+  });
+  var intro = document.getElementById('intro');
+  intro.style.marginTop = - intro.offsetHeight / 1.4 + 'px';
+}, false);
+
+
+
 $(document).ready(function(){
   function moveMarker() {
     var activeNav = $('.active');

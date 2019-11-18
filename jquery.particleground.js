@@ -385,7 +385,7 @@
     particleRadius: 8, // Dot size
     lineWidth: 2,
     curvedLines: false,
-    proximity: 80, // How close two dots need to be before they join
+    proximity: 50, // How close two dots need to be before they join
     parallax: true,
     parallaxMultiplier: 100, // The lower the number, the more extreme the parallax effect
     onInit: function() {},
